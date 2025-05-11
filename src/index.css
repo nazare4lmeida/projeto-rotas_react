@@ -1,0 +1,82 @@
+:root {
+  /* Fontes e tipografia */
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Cores pastel neutras */
+  --bg-color: #021329;
+  --text-color: #e7ebee;
+  --link-color: #edeff5;
+  --link-hover: #4a5a7e;
+  --button-bg: #406286;
+  --button-text: #031724;
+  --button-border: #134155;
+  --accent-color: #010c24;
+  --site-footer-bg: #0c233d;
+  --site-footer-text: #eff1f3;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--button-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--link-hover);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+.site-footer {
+  background-color: var(--site-footer-bg);
+  color: var(--site-footer-text);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
